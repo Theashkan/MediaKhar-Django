@@ -1,0 +1,50 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}
+  Category | Mediakhar
+{% endblock title %}
+
+{% block content %}
+
+<div style="height: 50vh; margin-top: 30px;"> 
+    <section class="overflow-hidden text-gray-700">
+        <div class="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+          <div class="flex flex-wrap -m-1 md:-m-2">
+            <div class="flex flex-wrap w-1/2">
+              <div class="w-1/2 p-1 md:p-2">
+                <a href="http://localhost:8000/tag/phone">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                    src="{% static 'img/iphone.jpeg' %}">
+                </a>
+              </div>
+              <div class="w-1/2 p-1 md:p-2">
+                    <a href="http://localhost:8000/tag/airpod">
+                        <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                        src="{% static 'img/airpod.jpeg' %}">
+                    </a>
+              </div>
+              <div class="w-full p-1 md:p-2">
+                <a href="http://localhost:8000/tag/samsung">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                    src="{% static 'img/samsung.png' %}">
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+              <div class="w-full p-1 md:p-2">
+                <a href="http://localhost:8000/tag/apple">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                    src="{% static 'img/apple.jpg' %}">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+{% endblock content %}
+    
